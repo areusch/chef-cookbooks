@@ -1,0 +1,3 @@
+[submodule "cookbooks/iptables"]
+	path = cookbooks/iptables
+	url = git@gemini.dyn-o-saur.com:chef/iptables.git
