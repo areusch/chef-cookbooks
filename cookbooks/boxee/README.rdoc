@@ -1,0 +1,16 @@
+= DESCRIPTION:
+
+This is basic boxee setup. Literally all it does right now is install
+boxee. Later it will integrate with wiimote support and write any
+configuration necessary for configuring media files.
+
+= REQUIREMENTS:
+
+Ubuntu.
+
+= ATTRIBUTES:
+
+No external attributes.
+
+= USAGE:
+
