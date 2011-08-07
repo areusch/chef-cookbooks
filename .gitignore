@@ -1,2 +1,5 @@
 .rake_test_cache
 
+/.chef/areusch.pem
+/.chef/knife.rb
+/.chef/rnet-validator.pem
