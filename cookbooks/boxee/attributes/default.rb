@@ -17,7 +17,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-case kernel[machine]
+case kernel[:machine]
 when "x86_64"
   node[:boxee_dpkg_url] = "http://www.boxee.tv/download/ubuntu64?early=0"
     node[:boxee_dpkg_checksum] = "06f3482df763d0c56c4e9a6cc26724e657efd1e078661c75b08bd3f7dade3992"
