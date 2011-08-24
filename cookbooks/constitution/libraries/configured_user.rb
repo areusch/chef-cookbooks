@@ -25,7 +25,7 @@ class Chef
       def initialize(*args)
         if args.length == 1 && args[0].class == ::Chef::Resource::User
           super(args[0].name)
-          args[0].instance_variables.each {|x| instance_variable_set(x, args[0].x) }
+          args[0].instance_variables.each {|x| instance_variable_set(x, args[0].instance_variable_get(x)) }
         else
           super(*args)
         end
