@@ -39,9 +39,9 @@ require 'transmission-simple'
 
 template "transmission-default" do
   case node['platform']
-  when "centos","redhat" 
+  when "centos","redhat"
     path "/etc/sysconfig/transmission-daemon"
-  else 
+  else
     path "/etc/default/transmission-daemon"
   end
   source "transmission-daemon.default.erb"

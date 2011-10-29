@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: apache2
-# Recipe:: php5 
+# Recipe:: php5
 #
 # Copyright 2008-2009, Opscode, Inc.
 #
@@ -21,7 +21,7 @@ case node[:platform]
 when "debian", "ubuntu"
   package "libapache2-mod-php5" do
     action :install
-  end  
+  end
 when "arch"
   package "php-apache" do
     action :install
