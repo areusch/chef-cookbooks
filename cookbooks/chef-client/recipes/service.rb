@@ -122,7 +122,7 @@ when "arch"
   service "chef-client" do
     action [:enable, :start]
   end
-  
+
 when "runit"
 
   include_recipe "runit"

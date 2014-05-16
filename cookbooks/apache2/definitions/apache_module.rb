@@ -19,11 +19,11 @@
 
 define :apache_module, :enable => true, :conf => false do
   include_recipe "apache2"
- 
+
   if params[:conf]
     apache_conf params[:name]
   end
- 
+
   if params[:enable]
     execute "a2enmod #{params[:name]}" do
       command "/usr/sbin/a2enmod #{params[:name]}"
@@ -32,7 +32,7 @@ define :apache_module, :enable => true, :conf => false do
             ((File.exists?("#{node[:apache][:dir]}/mods-available/#{params[:name]}.conf"))?
               (File.symlink?("#{node[:apache][:dir]}/mods-enabled/#{params[:name]}.conf")):(true)))
       end
-    end    
+    end
   else
     execute "a2dismod #{params[:name]}" do
       command "/usr/sbin/a2dismod #{params[:name]}"

@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: apache2
-# Recipe:: ssl 
+# Recipe:: ssl
 #
 # Copyright 2008-2009, Opscode, Inc.
 #
@@ -25,7 +25,7 @@ if platform?("centos", "redhat", "fedora")
 
   file "#{node[:apache][:dir]}/conf.d/ssl.conf" do
     action :delete
-    backup false 
+    backup false
   end
 end
 
